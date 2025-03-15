@@ -2,7 +2,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import { geocode } from './geocoding';
 
 // Use environment variable for API key
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyA3GxmWO6YOiWWgJBxphoXTJGsd8WYitI0';
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY || 'your gemini API';
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 const PROMPT_TEMPLATE = `Create a detailed {numberOfDays}-day travel itinerary for {destination} with a STRICT total budget of ₹{budget} for {travelers} travelers. DO NOT exceed this budget.
